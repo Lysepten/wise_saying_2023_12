@@ -1,14 +1,17 @@
 import java.util.Scanner;
 
 public class App {
+	
 	private Scanner sc;
 
 	public App(Scanner sc) {
 		this.sc = sc;
 	}
-
+	
 	public void run() {
 		System.out.println("== 명언 앱 실행 ==");
+
+		int lastId = 1;
 
 		while (true) {
 			System.out.print("명령어 ) ");
@@ -21,7 +24,8 @@ public class App {
 				String content = sc.nextLine().trim();
 				System.out.print("작가 : ");
 				String author = sc.nextLine().trim();
-				System.out.println("1번 명언이 등록되었습니다.");
+				System.out.println(lastId + "번 명언이 등록되었습니다.");
+				lastId++;
 			}
 		}
 
