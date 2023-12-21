@@ -5,7 +5,7 @@ import com.ws.wiseSaying.controller.WiseSayingController;
 
 public class App {
 
-	byte system_status = 1;
+	private byte system_status = 1;
 
 	public App() {
 
@@ -34,7 +34,7 @@ public class App {
 				wiseSayingController.list();
 				break;
 			case "삭제":
-				wiseSayingController.remove();
+				wiseSayingController.remove(rq);
 				break;
 			default:
 				System.out.println("존재하지 않는 명령어입니다");
