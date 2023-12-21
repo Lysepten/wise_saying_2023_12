@@ -43,4 +43,13 @@ public class Rq {
 		return params.get(name);
 	}
 
+	public int getIntParam(String name, int defaultValue) {
+		try {
+			return Integer.parseInt(getParam(name));
+		} catch (NumberFormatException e) {
+
+		}
+		return defaultValue;
+	}
+
 }
