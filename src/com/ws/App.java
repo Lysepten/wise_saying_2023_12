@@ -1,6 +1,10 @@
+package com.ws;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import com.ws.wiseSaying.entity.WiseSaying;
 
 public class App {
 	private Scanner sc;
@@ -33,7 +37,7 @@ public class App {
 
 				System.out.printf("%d번 명언이 등록되었습니다.\n", id);
 				lastId++;
-
+				
 			} else if (cmd.equals("목록")) {
 				if (wiseSayings.size() == 0) {
 					System.out.println("등록 된 명언이 없어");
