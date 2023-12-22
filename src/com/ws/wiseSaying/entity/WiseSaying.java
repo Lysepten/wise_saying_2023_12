@@ -1,6 +1,7 @@
 package com.ws.wiseSaying.entity;
 
-public class WiseSaying {
+public class WiseSaying { // 정보들이 저장되는 공간으로 객체와 연결된 외부에서 들어온 값들을 조립하고 관리한다.(저장 X)
+	// 외부에서 쉽게 접근하지 못하도록 private로 접근을 제한했다.
 	private int id;
 	private String content;
 	private String author;
