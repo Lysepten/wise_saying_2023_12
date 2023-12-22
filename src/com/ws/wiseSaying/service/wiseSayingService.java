@@ -13,7 +13,7 @@ public class WiseSayingService {
 
 		wiseSayingRepository = new WiseSayingRepository();
 	}
-
+	
 	public List<WiseSaying> findAll() {
 		return wiseSayingRepository.findAll();
 	}
