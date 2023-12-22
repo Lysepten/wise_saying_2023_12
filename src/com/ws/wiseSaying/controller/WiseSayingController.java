@@ -54,7 +54,7 @@ public class WiseSayingController {
 			System.out.printf("%d번 명언은 존재하지 않습니다.\n", id);
 			return;
 		}
-
+		
 		// 찾은 명언 객체를 object기반으로 삭제
 		wiseSayingService.remove(wiseSaying);
 
